@@ -1,7 +1,9 @@
 
-$('.flickity-wrapper').flickity({
+$('.flickity').flickity({
   // options
-  cellAlign: 'left',
+  cellAlign: "center",
   contain: true,
-  cellSelector: '.carousel-cell'
+  cellSelector: '.carousel-cell',
+  prevNextButtons: false,
+  autoPlay: 3000,
 });
