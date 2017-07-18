@@ -15,7 +15,7 @@ var itemCount = 0;
 
 $('.add-to-cart').click(function (){
   itemCount ++;
-  $('.cart-img').html(itemCount).css('display', 'block');
+  $('#add-item').html(itemCount).css('display', 'block');
 }); 
 
 // sign up form alert box
@@ -34,3 +34,4 @@ $(function(){
 
     });
 });
+
