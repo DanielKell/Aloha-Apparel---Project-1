@@ -213,10 +213,6 @@ header {
 
  /* ------- Mobile View -------  */
 
- /* body {
-	 max-width: 600px;
- } */
-
  /* ------- Header Section ------- */
 
 .site-header {
@@ -251,11 +247,12 @@ header {
 	flex: 0 1 50%;
 	order: 2;
 	text-align: right;
+	position: relative;
   }
 
 .cart img {
 	width: 50px;
-    margin-right: 10px;
+	margin-right: 10px;
 }
 
 .menu {
@@ -280,6 +277,19 @@ header {
 .menu li a {
 	text-decoration: none;
 	text-transform: uppercase;
+}
+
+.cart #add-item {
+  	position: absolute;
+  	display: none;
+  	top: -2px;
+  	left: 105px;
+  	width: 15px;
+  	height: 15px;
+  	border-radius: 50%;
+  	background: red;
+  	color: white;
+  	text-align: center;
 }
 
 /* ------- Banner Section ------- */
@@ -460,12 +470,22 @@ header {
 	width: 100%;
 	position: absolute;
 	text-align: center;
+	cursor: default;
 }
 
 .carousel-cell h3, p {
 	text-align: center;
 	line-height: 2;
 	padding-top: 5px;
+	
+}
+
+button {
+	color: white;
+	font-weight: bold;
+	background-color: black;
+	border-radius: 25px;
+	cursor: pointer;
 }
 
 /* ------- Sign-up Section ------- */
@@ -537,31 +557,40 @@ input[type=submit]:hover {
 /* ------- Footer Section ------- */
 
 .site-footer {
-	background-color: black;
+	background-color: #242424;
 	color: white;
+	font-family: 'Playfair Display', serif;
 	padding: 4rem 0;
 	text-align: center;
-	font-size: 12px;
-	font-family: 'Playfair Display Web', serif;
 }
 
-.copy {
-	line-height: 1.25;
-	margin-bottom: 1rem;
-}
-
-.phone {
-	margin-bottom: 1rem;
-}
-
-.phone a {
+.site-footer a {
 	color: white;
+}
+
+.web-info {
+	line-height: 1.5;
+}
+
+.copy, .address {
+	margin-bottom: 1rem;
 }
 
 .address {
 	color: grey;
-	line-height: 1.25;
-	margin-bottom: 2rem;
+}
+
+.social a {
+	color: white;
+	text-decoration: none;
+}
+
+.social a:hover {
+	color: #e2574c;
+}
+
+.social li {
+	display: inline-block;
 }
 
 .social {
@@ -573,22 +602,15 @@ input[type=submit]:hover {
 	text-decoration: none;
 }
 
-.social a {
-	color: white;
-	text-decoration: none;
-	padding: 0.25rem;
-}
-
- .social a:hover {
-	color: red;
-} 
-
 .network-name {
 	display: none;
 }
 
-.social li {
-	display: inline;
+i {
+	margin-top: 2rem;
+	min-width: 25px;
+  	margin-left: 1rem;
+	text-decoration: none;
 }
 
 /* ------- tablet mode -------  */
@@ -655,13 +677,7 @@ input[type=submit]:hover {
 
 	/* ------- About Section ------- */
 
-	.wide {
-		flex-basis: 50%;
-	}
 
-	.square {
-		flex-basis: 25%;
-	}
 
 	/* ------- Shop Section ------- */
 
@@ -692,36 +708,49 @@ input[type=submit]:hover {
 		width: 50%;
 		background-size: cover;
 		max-width: 50%;
-		/* flex-basis: 100%; */
+	}
+
+	/* -------- Signup Section -------- */
+
+	.signup {
+		width: 50%;
+	}
+
+	input[type=submit] {
+		right: 2rem;
 	}
 
 	/* ------- Footer Section ------- */
 
 	.site-footer {
-		padding: 4rem 0;
 		display: flex;
 		justify-content: space-between;
+		text-align: left;
+		align-content: left;
 	}
 
 	.web-info {
 		align-self: flex-start;
-		padding-left: 1rem;
-		text-align: left;
 	}
 
 	.social {
-		color: white;
-		font-family: 'Raleway Web', sans-serif;
-		font-weight: lighter;
-		list-style: none;
-	  	padding-left: 0;
-		text-decoration: none;
 		align-self: flex-end;
-		flex-direction: column;
+		line-height: 0;
+		margin-top: 0;
+		padding-right: 2rem;
+	}
+
+	.social li {
+		display: block;
 	}
 
 	.network-name {
-		display: block;
+		display: inline;
+	}
+
+	.social i {
+		min-width: 25px;
+		margin: 8px;
 	}
 	
 }
@@ -757,13 +786,6 @@ input[type=submit]:hover {
 
 	/* ------- About Section ------- */
 
-	.wide {
-		flex-basis: 50%;
-	}
-
-	.square {
-		flex-basis: 25%;
-	}
 
 	/* ------- Shop Section -------*/
 
@@ -799,4 +821,3 @@ input[type=submit]:hover {
 	
 
 }
-
