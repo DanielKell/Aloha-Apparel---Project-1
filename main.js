@@ -15,7 +15,7 @@ var itemCount = 0;
 
 $('.add-to-cart').click(function (){
   itemCount ++;
-  $('#add-item').html(itemCount).css('display', 'block');
+  $('.cart-img').html(itemCount).css('display', 'block');
 }); 
 
 // sign up form alert box
@@ -33,21 +33,4 @@ $(function(){
       }
 
     });
-});
-
-// Smoothscroll
-
-$(function(){
-	$('a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
-
-	    var target = this.hash;
-	    var $target = $(target);
-
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top - 90
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
 });
