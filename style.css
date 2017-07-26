@@ -1,7 +1,7 @@
 /* reset */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h1, h2, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -159,7 +159,7 @@ html {
 	margin: 0 auto;
  }
 
- h2 {
+ h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.4rem;
     font-style: italic;
@@ -176,7 +176,7 @@ a:hover {
 	 color: darkred;
  }
 
- h2 {
+ h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.4rem;
     font-style: italic;
@@ -185,7 +185,7 @@ a:hover {
 	text-align: center;
 }
 
-h3 {
+h2 {
     color: #e2574c;
 	font-family: 'Railway Display', serif;
 	font-size: 1.5rem;
@@ -473,7 +473,7 @@ header {
 	cursor: default;
 }
 
-.carousel-cell h3, p {
+.carousel-cell h2, p {
 	text-align: center;
 	line-height: 2;
 	padding-top: 5px;
