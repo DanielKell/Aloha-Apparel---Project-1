@@ -169,7 +169,7 @@ html {
 }
 
 a {
-	color: #e2574c;
+	color: #db3a26;
 }
 
 a:hover {
@@ -186,7 +186,7 @@ a:hover {
 }
 
 h2 {
-    color: #e2574c;
+    color: #db3a26;
 	font-family: 'Railway Display', serif;
 	font-size: 1.5rem;
 	line-height: 1;
@@ -540,7 +540,7 @@ input[type=email], input[type=submit] {
 }
 
 input[type=submit] {
-	background: #e2574c;
+	background: #db3a26;
 	color: white;
 	cursor:pointer;
 	font-weight: bold;
@@ -586,7 +586,7 @@ input[type=submit]:hover {
 }
 
 .social a:hover {
-	color: #e2574c;
+	color: #db3a26;
 }
 
 .social li {
